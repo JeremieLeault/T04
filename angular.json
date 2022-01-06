@@ -4,6 +4,14 @@
   "newProjectRoot": "projects",
   "projects": {
     "TP01-bonnes-pratiques-pwa": {
+
+      "i18n": {
+        "sourceLocale":"en-US",
+        "locales": {
+          "fr":"src/locate/messages.fr.xlf",
+          "es":"src/locate/messages.es.xlf"
+        }        
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -28,14 +36,28 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
-            "styles": [
-              "src/styles.scss"
+            "styles": [              
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "src/styles.scss"       
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
+
+            "fr":{
+              "localize":["fr"]
+            },
+            "es":{
+              "localize":["es"]
+            },
             "production": {
               "budgets": [
                 {
@@ -71,6 +93,12 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "fr":{
+              "browserTarget": "TP01-bonnes-pratiques-pwa:build:fr"
+            },
+            "es":{
+              "browserTarget": "TP01-bonnes-pratiques-pwa:build:es"
+            },
             "production": {
               "browserTarget": "TP01-bonnes-pratiques-pwa:build:production"
             },
@@ -96,7 +124,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
