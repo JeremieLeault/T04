@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1310447782597774833" datatype="html">
+        <source>o Hello Angular</source>
+         <target>> hola Angular </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/webApp/root/accueil/home/home.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="titre" datatype="html">
+        <source>o Angular is the best Front Framework ! </source>
+        <target>angular esta fantastica </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/webApp/root/accueil/home/home.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="877420482414943548" datatype="html">
+        <source>assets/images/drapeaux/en/drapeau_en.jpg</source>
+         <target>assets/images/drapeaux/es/drapeau_es.jpg </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/webApp/root/accueil/home/home.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3887963921296655424" datatype="html">
+        <source>My flag</source>
+        <target>mi Bandera</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/webApp/root/accueil/home/home.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
