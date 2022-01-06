@@ -21,7 +21,7 @@ import {FrameworksModule} from "../frameworks/frameworks.module";
     CommonModule,
     RouterModule,
     FilmsModule,
-    FrameworksModule
+    // FrameworksModule
   ],
   exports: [
     LandingPageComponent

@@ -2,7 +2,15 @@
 
 <ul>
   <li>
-    <a class="nav-link" routerLink="angular-13">Angular 13</a>
+    <a class="nav-link"
+       [routerLink]="['angular-13']"
+       [routerLinkActive]="['lien-actif']">Angular 13</a>
+  </li>
+  <li>
+    <a class="nav-link" routerLink="react">React</a>
+  </li>
+  <li>
+    <a class="nav-link" routerLink="vue">vue</a>
   </li>
 </ul>
 
